@@ -3,7 +3,7 @@ Gem::Specification.new do |s|
   s.version     = '0.1'
   s.date        = Time.now.strftime("%Y-%m-%d")
   s.summary     = 'EdgeRouter via SSH from Ruby'
-  s.license     = 'New BSD (3-clause)'
+  s.license     = 'BSD-3-Clause'
   s.description = 'Library for accessing Ubiquiti EdgeRouter via SSH from Ruby'
   s.authors     = [
     'Jeremy Cole',
@@ -14,4 +14,5 @@ Gem::Specification.new do |s|
     'LICENSE',
     'lib/edgerouter.rb',
   ]
+  s.add_dependency('net-ssh', '~> 0')
 end
